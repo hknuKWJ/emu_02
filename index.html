@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Great Emu War</title>
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		body, h1, img, p, ul{margin:0;}
+		img{display: block; width:100%; margin:auto;}
+		header, section, footer{margin:auto;}
+		header{height:800px; padding-bottom: 150px; padding-top: 62px; }
+		.bg-s1{background: url(bg1.jpg); background-size: 100% auto; background-position: 0px -800px;}
+		h1{margin: auto; font-weight:900; font-size:11em; padding-top: 5px; margin-bottom: 0px; color: white;}
+		h2{margin: auto; font-weight:900; font-size:2.9em; padding-top: 70px; margin-bottom: 40px; line-height:160%; word-spacing:-1px; word-break: keep-all;}
+		h3{margin: auto; font-weight:900; font-size:2.3em; height: 60px;  padding-top: 400px; margin-bottom: 100px; text-align: center; word-break: keep-all;}
+		p{margin-top:20px; margin-bottom:10px; line-height:200%; font-weight:500; word-spacing:-1px; font-size:1.2em; word-break: keep-all;}
+		footer{height: 180px; background-color: #9FA0A0;}
+		footer h2{margin-top:10px; margin-bottom: 0px;}
+		footer h1{text-align: right; width:280px; margin-bottom: -10px; }
+		.floating {position: fixed; right;: 50%; margin-top: 680px; margin-left: 50;}
+		.bg-header{background-color: black;}
+		.row{width:1200px; margin: auto; display: flex; padding: 0px 5px; margin-bottom:20px; }
+		.row2{width:1600px; margin: auto; display: flex; padding: 0px 5px; margin-bottom:20px; }
+		.row3{width:800px; margin: auto; display: flex; padding: 0px 5px; margin-bottom:20px; }
+		.row4{width:700px; margin: auto; display: flex; padding: 0px 5px; margin-top:250px; margin-bottom:200px;}
+		.row4 p{margin-top:5px; margin-bottom:5px; line-height:210%; font-weight:400; word-spacing:-1px; text-align: right;  font-size:0.9em; word-break: keep-all;}
+		.row4 img{display: block; width: 90%; margin:auto;}
+		.row5{width:628px; height: 1336px; margin: auto; padding: 60px; margin-top:250px; margin-bottom:200px; background-color: #CEE5E2;}
+		.col-1{width:80px; margin:0px 10px;}
+		.col-2{width:180px; margin:0px 10px;}
+		.col-3{width:280px; margin:0px 10px;}
+		.col-4{width:380px; margin:0px 10px;}
+		.col-5{width:480px; margin:0px 10px;}
+		.col-6{width:580px; margin:0px 10px;}
+		.col-7{width:680px; margin:0px 10px;}
+		.col-8{width:780px; margin:0px 10px;}
+		.col-9{width:880px; margin:0px 10px;}
+		.col-10{width:980px; margin:0px 10px;}
+		.col-11{width:1080px; margin:0px 10px;}
+		.col-12{width:1180px; margin:0px 10px;}
+		.rowheader{width:1000px; margin: auto; display: flex; padding: 0px 5px; margin-bottom:20px; }
+		.img002{display: block; width:100%; margin:auto; margin-top: 60px; margin-bottom: 160px; animation: emuuu 2s infinite alternate-reverse; }
+		.img004{display: block; width:100%; margin:auto; margin-top: 60px; margin-bottom: 160px; animation: emuuu 2s infinite alternate-reverse; }
+		.img005{display: block; width:80%; margin:auto; margin-top: 180px; margin-bottom: 0px; text-align: center;}
+		.img007{display: block; margin:auto; margin-top: 180px; margin-bottom: 0px; text-align: center;}
+		.imgex{display: block; width:80% margin: auto; padding-top: 400px; margin-bottom: 100px; text-align: center; animation: emuuuu 2s infinite alternate-reverse;}
+		.p1 {margin-top:20px; margin-bottom:0px; font-weight:500; word-spacing:-1px; word-break: keep-all; padding-top: 120px;}
+		.p2 {margin-top:40px; margin-bottom:30px; font-size:1.4em; font-weight:700; word-spacing:-1px; word-break: keep-all;}
+		.p3 {margin-top:20px; margin-bottom:10px; word-spacing:-1px; text-align: right;  word-break: keep-all;}
+		.p4 {margin-top:20px; padding-top: 40px; line-height:210%; font-weight:900; word-spacing:-1px; text-align: right;  font-size:2.3em; word-break: keep-all;}
+		.p5 {padding-top: 150px; margin-top:20px; margin-bottom:10px; word-spacing:-1px; text-align: right;  word-break: keep-all;}
+		.p6 {text-align: center; word-break: keep-all;}
+		.p7 {padding-top:0px; padding-bottom: 0px; margin-bottom:10px; line-height:210%; font-weight:400; word-spacing:-1px; font-size:0.7em; word-break: keep-all;}
+		.p8 {padding-top:0px; padding-bottom: 23px; margin-bottom:10px; line-height:210%; font-weight:400; word-spacing:-1px; font-size:0.7em; word-break: keep-all;}
+		.p9 {padding-top:0px; padding-bottom: 0px; margin-bottom:-20px; line-height:210%; font-weight:400; word-spacing:-1px; font-size:0.8em; word-break: keep-all;}
+		.p3 footer {}
+		.sec1 {margin-top:300px; margin-bottom:30px;}
+		.sec2 {margin-bottom:80px;}
+		.h2right {margin: auto; font-weight:700; font-size:1.1em; padding-top: 5px; width:280px; margin-bottom: 40px; text-align: right;}
+		.h2right2 {margin: auto; font-weight:700; font-size:1.1em; padding-top: 5px; width:280px; margin-bottom: 10px; text-align: right;}
+		.h2left {margin: auto; font-weight:700; padding-top: 5px;  margin-bottom: 10px; text-align: left;}
+		.bg-cloth{background: url(../img/cloth.jpg); background-size: 100% auto; background-position: 0px 6676px; background-attachment: fixed; height: 250px; text-align: center; margin-top: 180px;}
+		.bg-cloth h1{color: white; padding-top: 100px;} 
+		.grad01 {background: linear-gradient(to bottom, white, gray );}
+		.grad02{background:}
+		.bgcolor{background-color: #C6D8E5;}
+		.bgcolor2{background-color: white; width: 1000px; margin: auto;}
+		.ani1{width: 300px; height: 300px; position: absolute; animation: emu 1s infinite alternate-reverse;}
+		.ani2{width: 300px; height: 300px; position: absolute; animation: emuu 1s infinite alternate-reverse;}
+		.ani3{width: 300px; height: 300px; position: absolute; animation: zz 1s infinite alternate-reverse;}
+		@keyframes emu{
+			0% {left:900px;}
+			100% {left:800px;}}
+
+		@keyframes emuu{
+			0% {right:100px;}
+			100% {right:200px;}}
+
+		@keyframes emuuu{
+			0% {transform: scale(1,1)}
+			100% {transform: scale(1.1,1.1)}
+
+		@keyframes zz{
+			0% {right:1000px;}
+			100% {right:200px;}}
+	</style>
+</head>
+<body>
+		<header class="bg-header">
+			<div class="row">
+				<div class="col-4">
+					<h1>The</h1>
+				</div>
+				<div class="col-1">
+				</div>
+				<div class="col-7">
+					<h1>Great</h1>
+				</div>
+			</div>
+				<div class="row">
+				<div class="col-4">
+					<img src="001.jpg">
+				</div>
+				<div class="col-1">
+				</div>
+				<div class="col-7">
+					<h1>Emu</h1>
+					<h1>War</h1>
+				</div>
+		</div>
+	</header>
+	<div class="bg-s1">
+	<section class="row">
+		<div class="col-7">
+			<h2>
+			때는 1932년, 제 1차 세계대전에 참전했던 호주군들의 눈 앞에 또 다른 거대한 적이 나타났다.
+			</h2>
+		</div>
+		<div class="col-5">
+				</div>
+	</section>
+	<section class="row">
+		<div class="col-5">
+			<p class="p1">
+				호주 정부가 제공한 토지에서 농사를 짓던 퇴역 호주 군인들, 그러나 1920년대 후반부터 시작된 대공황으로 줄어든 소비, 계속해서 떨어지는 밀 값, 가뭄까지 들이닥친 최악의 상황에서 결정타를 날린 불청객이 찾아온다. 
+			</p>
+			<p class="p2">
+				바로 이 전쟁의 원인, 가뭄으로 먹을 것을 구하러 농가까지 찾아온 2만 마리의 에뮤 군단이었다.
+			</p>
+		</div>
+		<div class="col-7">
+				</div>
+	</section>
+	<section class="row2">
+		<div class="col-7">
+		</div>
+		<div class="col-3">
+			<div class="ani1">
+			<img src="002_1.png">
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="img002">
+			<img src="002.png">
+		</div>
+		</div>
+		<div class="col-2">
+			<div class="ani2">
+			<img src="002_2.png">
+			</div>
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-7">
+		</div>
+		<div class="col-5">
+		 <p class="p3">에뮤는 캥거루, 코알라와 같이 호주를 대표하는 동물로 키는 2m 정도, 몸무게는 50kg 가량의 타조와 같이 생긴 새이다. 그리고 가장 중요한 이 새의 주식은 바로 과일, 곤충 또는
+		</p>
+		<p class="p4">
+			곡식.
+		</p>
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-12">
+			<img src="003.png">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-1">
+		</div>
+		<div class="col-5">
+			<p class="p1">정부의 요청에 의해 밀을 대량으로 키우던 밀 농장을 본 에뮤는 인간들이 물도 가져다 놓고 땅도 잘 다진데다 식량도 천지에 널려있으니 밀 농장 안에 대놓고 보금자리를 만들고 눌러 앉아버린 것!
+			</p>
+		</div>
+		<div class="col-6">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-6">
+		</div>
+		<div class="col-5">
+		<p class="p5">커다란 에뮤에게 울타리는 애초에 무용지물이었고 소방서나 경찰관들로 이 문제를 해결할 수 없자 농부들은 군에 도움을 요청했다. 
+		</p>
+		</div>
+		<div class="col-1">
+		</div>
+	</section>
+		<h3>
+			그리고 호주 정부는 농부들을 위해 군을 동원하기로 한다!
+		</h3>
+
+	<img src="004.png">
+
+	</div>
+	<section class="row">
+		<div class="col-1">
+		</div>
+		<div class="col-10">
+		<p class="p2">적군은 농가를 점령한 에뮤 2만마리 군단, 호주군은 전쟁에서 큰 효력을 보여 기세등등한 기관총 부대! 기관총 두 문과 10000발의 탄약으로 무장한 군대가 출발한다.
+		</p>
+		</div>
+		<div class="col-1">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-12">
+			<div class="img005">
+				<img src="005.png">
+			</div>
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-4">
+		</div>
+		<div class="col-4">
+		<p class="p6">일단 이 비만 그치면 출발하자...
+		</p>
+		</div>
+		<div class="col-4">
+		</div>
+	</section>
+		<h3>
+		그리고 11월 2일, 개전의 때가 왔다.
+	</h3>
+	<section class="row">
+		<div class="col-12">
+			<img src="006.png">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-1">
+		</div>
+		<div class="col-5">
+			<p>에뮤 무리를 발견한 군인들은 기관총을 발사했다!
+			그러나 빽빽한 깃털로 만들어진 방탄복을 입고있는 그들의 몸을 노리는 건 거의 의미가 없었다. 작전을 바꿔 머리와 다리를 노리는 호주군, 그러나 얇디 얇은 에뮤의 머리와 다리, 거기다 어마무시한 속도까지 더해져 도저히 조준사격으로 맞출 수 있는 수준이 아니었다. 
+			</p>
+		</div>
+		<div class="col-6">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-2">
+		</div>
+		<div class="col-8">
+			<div class="img007">
+			<img src="007.png">
+			</div>
+		</div>
+		<div class="col-2">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-4">
+		</div>
+		<div class="col-6">
+			<p class="p3">
+				11월 4일, 1000마리의 에뮤를 발견하고 사격을 시작했지만 12마리를 죽이고서는 총알이 걸려버린다. 남은 약 988마리의 에뮤들은 시속 50km의 속도로 유유히 도망치고 호주군은 그 모습을 구경할 수 밖에 없었다.
+			</p>
+		</div>
+		<div class="col-2">
+		</div>
+	</section>
+	<div class="sec1">
+	<section class="row">
+		<div class="col-3">
+			<img src="008.png">
+		</div>
+		<div class="col-6">
+		<h3>
+			그 와중에 에뮤는 인간과의 전쟁으로 한 단계 진화해서 온다.
+		</h3>
+		</div>
+		<div class="col-3">
+			<img src="009.png">
+		</div>
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-3">
+		</div>
+		<div class="col-6">
+			<p>커다란 에뮤가 리더를 맡아 감시를 해 인간의 동향을 파악하고 분대를 나눠 한 분대가 공격을 받으면 다른 분대가 곡식을 먹는 방식으로 분대끼리 교대를 하며 곡식을 털어버리기 시작한 것.</p>
+		</div>
+		<div class="col-3">
+		</div>
+	</section>
+	<h3>호주군도 가만히 있진 않았…지만</h3>
+	<section class="row">
+		<div class="col-3">
+		</div>
+		<div class="col-3">
+			<img src="010.png">
+		</div>
+		<div class="col-3">
+			<div class="ani3">
+			<img src="011.png">
+		</div>
+		</div>
+		<div class="col-3">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-3">
+		</div>
+		<div class="col-6">
+			<p>에뮤의 속도를 따라잡기 위해 트럭을 동원을 한 호주군.
+			기동력을 확보하고 드디어 에뮤를 소탕하는가 싶더니 에뮤 한 마리가 온 힘을 다해 트럭에 몸통 박치기를 시전하자 트럭은 핸들이 망가져 버리고 만다.</p>
+		</div>
+		<div class="col-3">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-3">
+		</div>
+		<div class="col-6">
+			<p>그렇게 하루만에 트럭은 무용지물이 되어버리고 이런 상황이 반복되자 호주군은 전의를 잃어버린다.</p>
+		</div>
+		<div class="col-3">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-3">
+		</div>
+		<div class="col-6">
+			<p>이런 상황 속에서 동물 단체와 의회의 반대로 결국 호주군은 에뮤에게 항복하며 전쟁이 마무리 된다.</p>
+		</div>
+		<div class="col-3">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-2">
+		</div>
+		<div class="col-8">
+			<img src="012.png">
+		</div>
+		<div class="col-2">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-3">
+		</div>
+		<div class="col-6">
+			<p>사실 에뮤전쟁은 말이 전쟁이지 한 분대의 병사만이 투입된 동물 소탕전이다. 하지만 군대가 기관총까지 투입하고도 야생동물을 이기지 못했다는 임팩트가 너무 컸고 워낙에 에뮤가 잘 맞써 싸워서 두고두고 호주군의 수치라고 반 농담으로 회자되는 사건이다.</p>
+		</div>
+		<div class="col-3">
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-3">
+		</div>
+		<div class="col-6">
+			<p>
+			이후 에뮤는 포상금을 건 사냥에 의해 개체수가 하락했고 1999년에는 보호종에 지정이 됩니다. 현재는 가축화까지 진행되어 에뮤 스테이크도 먹을 수 있다고 한다. 길고 길게 보면 어떻게든 이겨낸 호주인의 승리가 아닐까...  </p>
+		</div>
+		<div class="col-3">
+		</div>
+	</section>
+</html>
